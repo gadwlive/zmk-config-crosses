@@ -1,0 +1,55 @@
+#include <physical_layouts.dtsi>
+
+/ {
+  physical_layout0: crosses_physical_layout {
+    compatible = "zmk,physical-layout";
+    display-name = "Crosses 36";
+    transform = <&default_transform>;
+    kscan = <&kscan0>;
+
+    keys =
+      /* row 0: RC(0,0..4) then RC(0,9..5) */
+      <&key_physical_attrs 100 100    0  112   0 0 0>,  /* RC(0,0) */
+      <&key_physical_attrs 100 100  100   62   0 0 0>,  /* RC(0,1) */
+      <&key_physical_attrs 100 100  200    0   0 0 0>,  /* RC(0,2) */
+      <&key_physical_attrs 100 100  300   25   0 0 0>,  /* RC(0,3) */
+      <&key_physical_attrs 100 100  400   38   0 0 0>,  /* RC(0,4) */
+      <&key_physical_attrs 100 100 1212  112   0 0 0>,  /* RC(0,9) */
+      <&key_physical_attrs 100 100 1112   62   0 0 0>,  /* RC(0,8) */
+      <&key_physical_attrs 100 100 1012    0   0 0 0>,  /* RC(0,7) */
+      <&key_physical_attrs 100 100  912   25   0 0 0>,  /* RC(0,6) */
+      <&key_physical_attrs 100 100  812   38   0 0 0>,  /* RC(0,5) */
+
+      /* row 1 */
+      <&key_physical_attrs 100 100    0  212   0 0 0>,  /* RC(1,0) */
+      <&key_physical_attrs 100 100  100  162   0 0 0>,  /* RC(1,1) */
+      <&key_physical_attrs 100 100  200  100   0 0 0>,  /* RC(1,2) */
+      <&key_physical_attrs 100 100  300  125   0 0 0>,  /* RC(1,3) */
+      <&key_physical_attrs 100 100  400  138   0 0 0>,  /* RC(1,4) */
+      <&key_physical_attrs 100 100 1212  212   0 0 0>,  /* RC(1,9) */
+      <&key_physical_attrs 100 100 1113  162   0 0 0>,  /* RC(1,8) */
+      <&key_physical_attrs 100 100 1012  100   0 0 0>,  /* RC(1,7) */
+      <&key_physical_attrs 100 100  912  125   0 0 0>,  /* RC(1,6) */
+      <&key_physical_attrs 100 100  812  138   0 0 0>,  /* RC(1,5) */
+
+      /* row 2 */
+      <&key_physical_attrs 100 100    0  312   0 0 0>,  /* RC(2,0) */
+      <&key_physical_attrs 100 100  100  262   0 0 0>,  /* RC(2,1) */
+      <&key_physical_attrs 100 100  200  200   0 0 0>,  /* RC(2,2) */
+      <&key_physical_attrs 100 100  300  225   0 0 0>,  /* RC(2,3) */
+      <&key_physical_attrs 100 100  400  238   0 0 0>,  /* RC(2,4) */
+      <&key_physical_attrs 100 100 1212  312   0 0 0>,  /* RC(2,9) */
+      <&key_physical_attrs 100 100 1112  262   0 0 0>,  /* RC(2,8) */
+      <&key_physical_attrs 100 100 1012  200   0 0 0>,  /* RC(2,7) */
+      <&key_physical_attrs 100 100  912  225   0 0 0>,  /* RC(2,6) */
+      <&key_physical_attrs 100 100  812  238   0 0 0>,  /* RC(2,5) */
+
+      /* row 3: RC(3,2)(3,3)(3,4) then RC(3,9)(3,8)(3,7) */
+      <&key_physical_attrs 100 100  250  372   0 0 0>,  /* RC(3,2) */
+      <&key_physical_attrs 100 100  350  372   0 0 0>,  /* RC(3,3) */
+      <&key_physical_attrs 100 100  450  372   0 0 0>,  /* RC(3,4) */
+      <&key_physical_attrs 100 100  750  372   0 0 0>,  /* RC(3,9) */
+      <&key_physical_attrs 100 100  850  372   0 0 0>,  /* RC(3,8) */
+      <&key_physical_attrs 100 100  950  372   0 0 0>;  /* RC(3,7) */
+  };
+};
