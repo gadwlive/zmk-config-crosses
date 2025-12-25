@@ -4,11 +4,14 @@
 
 / {
   chosen {
-    zmk,kscan = &kscan0;
-    zmk,physical-layout = &physical_layout0;
+    zmk,kscan = <&kscan0>;
+    zmk,physical-layout = <&physical_layout0>;
     /* zmk,matrix_transform は Studio では使わないので削除 */
   };
+
+  /* default_transform や kscan0 は今まで通り */
 };
+
 
     default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
