@@ -5,6 +5,7 @@
  */
  
 #include "crosses.dtsi"
+#include "crosses-layouts.dtsi"
 
 &default_transform {
     col-offset = <5>;
