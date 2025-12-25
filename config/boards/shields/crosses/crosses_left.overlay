@@ -5,6 +5,7 @@
  */
 
 #include "crosses.dtsi"
+#include "crosses-layouts.dtsi"
 
 &kscan0 {
 	col-gpios
