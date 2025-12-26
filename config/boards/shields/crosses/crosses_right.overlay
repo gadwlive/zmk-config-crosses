@@ -79,7 +79,7 @@
 	  layers = <4>;
  	 input-processors = <
 	 &zip_xy_to_scroll_mapper
-	 &zip_scroll_scaler 1 2 
+	 &zip_scroll_scaler 1 4 
      &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)
   	  >;
 	};
