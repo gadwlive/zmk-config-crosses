@@ -68,6 +68,8 @@
 
 &zip_temp_layer {
     excluded-positions = <
+        6 // u
+        7 // i
         15 // h
         16 // j
         17 // k
@@ -97,6 +99,3 @@
 	};
     };
 };
-
-
-
