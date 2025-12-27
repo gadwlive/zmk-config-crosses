@@ -15,7 +15,7 @@
 
         layer_0 {
             bindings = <
-&lt 3 Q  &kp W  &kp E          &kp R           &kp T          &kp Y           &kp U          &kp I      &kp O       &lt 4 P
+&lt 3 Q  &kp W  &kp E          &kp R           &kp T          &kp Y           &kp U          &kp I      &kp O       &kp P
 &kp A    &kp S  &kp D          &kp F           &kp G          &kp H           &kp J          &kp K      &kp L       &lt 4 MINUS
 &lt 1 Z  &kp X  &kp C          &kp V           &kp B          &kp N           &kp M          &kp COMMA  &kp PERIOD  &kp ENTER
                 &mt LCTRL TAB  &kp LEFT_SHIFT  &lt 2 LANG2    &kp LANGUAGE_1  &kp BACKSPACE  &kp SPACE
@@ -60,9 +60,9 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &mkp MB4   &mkp RCLK  &trans  &trans  &mo 4
-&trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &mo 4
-&trans  &trans  &trans  &trans  &trans    &mkp MCLK  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans     &mkp MB4   &mkp MB5   &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &mkp MCLK  &mkp LCLK  &mkp RCLK  &trans  &mo 4
+&trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
                 &trans  &trans  &trans    &trans     &trans     &trans
             >;
         };
