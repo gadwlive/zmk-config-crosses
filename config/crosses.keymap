@@ -16,28 +16,28 @@
 
         layer_0 {
             bindings = <
-&lt 3 Q  &kp W  &kp E          &kp R           &kp T          &kp Y           &kp U          &kp I      &kp O       &kp P
-&kp A    &kp S  &kp D          &kp F           &kp G          &kp H           &kp J          &kp K      &kp L       &lt 4 MINUS
-&lt 1 Z  &kp X  &kp C          &kp V           &kp B          &kp N           &kp M          &kp COMMA  &kp PERIOD  &kp ENTER
-                &mt LCTRL TAB  &kp LEFT_SHIFT  &lt 2 LANG2    &kp LANGUAGE_1  &kp BACKSPACE  &kp SPACE
+&lt 3 Q  &kp W  &kp E                 &kp R               &kp T          &kp Y          &kp U      &kp I           &kp O       &kp P
+&kp A    &kp S  &kp D                 &kp F               &kp G          &kp H          &kp J      &kp K           &kp L       &lt 4 MINUS
+&lt 1 Z  &kp X  &kp C                 &kp V               &kp B          &kp N          &kp M      &kp COMMA       &kp PERIOD  &kp RIGHT_ALT
+                &mt LCTRL LANGUAGE_2  &mt LEFT_SHIFT TAB  &lt 2 SPACE    &kp BACKSPACE  &kp ENTER  &kp LANGUAGE_1
             >;
         };
 
         layer_1 {
             bindings = <
-&kp EXCLAMATION  &kp QUESTION  &kp HASH        &kp DOLLAR    &kp PERCENT    &kp N7        &kp N8         &kp N9        &kp PLUS      &kp MINUS
-&kp AMPERSAND    &kp SQT       &kp COMMA       &kp UP_ARROW  &kp PERIOD     &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp ASTERISK  &kp SLASH
-&none            &kp LEFT_WIN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp N0        &kp ENTER
-                               &none           &none         &none          &trans        &kp BACKSPACE  &kp SPACE
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp HASH        &kp DOLLAR    &kp BACKSLASH    &kp N7        &kp N8         &kp N9        &kp PLUS      &kp MINUS
+&kp AMPERSAND     &kp AT             &kp EXCL        &kp UP_ARROW  &kp QUESTION     &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp ASTERISK  &kp SLASH
+&none             &kp LEFT_WIN       &kp LEFT_ARROW  &kp DOWN      &kp RIGHT        &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp N0        &kp ENTER
+                                     &none           &none         &none            &trans        &kp BACKSPACE  &kp SPACE
             >;
         };
 
         layer_2 {
             bindings = <
-&none  &none           &none           &none            &none            &none      &none     &none      &none       &none
-&none  &none           &kp UP_ARROW    &none            &kp PAGE_UP      &none      &none     &none      &none       &none
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp EQUAL  &kp RBKT  &kp SQT    &kp PERIOD  &kp SLASH
-                       &none           &none            &none            &none      &none     &kp SPACE
+&kp F1  &kp F2          &kp F3          &kp F4           &kp F5           &kp F6  &kp F7                &kp F8                 &kp F9          &kp F10
+&none   &none           &kp UP_ARROW    &none            &kp PAGE_UP      &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F11         &kp F12
+&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans  &kp EQUAL             &kp TILDE              &kp UNDERSCORE  &kp PIPE
+                        &none           &none            &none            &none   &none                 &kp SPACE
             >;
         };
 
@@ -122,7 +122,5 @@
         };*/
     };
 };
-
-
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 5 250>; };
