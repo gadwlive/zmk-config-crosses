@@ -11,13 +11,22 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        mclk {
+            bindings = <&mkp MCLK>;
+            key-positions = <16 17>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
 &lt 3 Q  &kp W  &kp E                 &kp R               &kp T          &kp Y          &kp U      &kp I           &kp O       &kp P
-&kp A    &kp S  &kp D                 &kp F               &kp G          &kp H          &kp J      &kp K           &kp L       &lt 4 MINUS
+&kp A    &kp S  &kp D                 &kp F               &kp G          &kp H          &kp J      &kp K           &lt 4 L     &kp MINUS
 &lt 1 Z  &kp X  &kp C                 &kp V               &kp B          &kp N          &kp M      &kp COMMA       &kp PERIOD  &kp RIGHT_ALT
                 &mt LCTRL LANGUAGE_2  &mt LEFT_SHIFT TAB  &lt 2 SPACE    &kp BACKSPACE  &kp ENTER  &kp LANGUAGE_1
             >;
@@ -62,7 +71,7 @@
         layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &mkp MCLK  &mkp LCLK  &mkp RCLK  &trans  &mo 4
+&trans  &trans  &trans  &trans  &trans    &mkp MCLK  &mkp LCLK  &mkp RCLK  &mo 4   &trans
 &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
                 &trans  &trans  &trans    &trans     &trans     &trans
             >;
