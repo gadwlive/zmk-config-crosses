@@ -16,7 +16,7 @@
 
         mclk {
             bindings = <&mkp MCLK>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
         };
     };
 
