@@ -18,6 +18,11 @@
             bindings = <&mkp MCLK>;
             key-positions = <16 15>;
         };
+
+        whispering {
+            bindings = <&kp LA(LS(D))>;
+            key-positions = <34 35>;
+        };
     };
 
     keymap {
