@@ -1,1 +1,18 @@
-zmk-config for Crosses
+# ZMK config for Crosses
+
+## 日本語キーボード設定
+
+OS のハードウェアキーボードレイアウトを「日本語キーボード
+(106/109 キー)」にしたまま使えるよう、`config/crosses.keymap` の記号キーを
+JIS 配列向けの HID キーコードへ変換しています。
+
+- 記号レイヤーでは `"`, `'`, `&`, `@`, `+`, `:`, `*`, `(`, `)`, `=`,
+  `~`, `_`, `|` などを、JIS 設定時にも意図した記号として入力できます。
+- `¥` と `_` には ZMK の `INTERNATIONAL_3` / `INTERNATIONAL_1` を使用します。
+- ベースレイヤーの親指キーは `英数` (`JP_EISU`) と `かな` (`JP_KANA`)
+  として定義しています。
+
+Windows の日本語キーボード設定を前提にした方式です。macOS や Linux では
+入力ソースや IME によって挙動が異なる場合があります。また、プリプロセッサの
+独自定義を使うため、キーマップの変更は Keymap Editor や ZMK Studio ではなく、
+`config/crosses.keymap` を直接編集してください。

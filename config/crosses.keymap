@@ -4,6 +4,32 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+// JIS host layout mappings. These emit the HID usages that produce the
+// intended characters while the OS keyboard layout is set to Japanese.
+#define JP_DQUOTE AT
+#define JP_AMPERSAND CARET
+#define JP_QUOTE AMPERSAND
+#define JP_EQUAL UNDER
+#define JP_CARET EQUAL
+#define JP_YEN INTERNATIONAL_3
+#define JP_PLUS COLON
+#define JP_TILDE PLUS
+#define JP_PIPE LS(INTERNATIONAL_3)
+#define JP_AT LEFT_BRACKET
+#define JP_COLON SINGLE_QUOTE
+#define JP_ASTERISK DOUBLE_QUOTES
+#define JP_BACKQUOTE LEFT_BRACE
+#define JP_UNDERSCORE LS(INTERNATIONAL_1)
+#define JP_LBRACKET RIGHT_BRACKET
+#define JP_RBRACKET BACKSLASH
+#define JP_LPAREN ASTERISK
+#define JP_RPAREN LEFT_PARENTHESIS
+#define JP_LBRACE RIGHT_BRACE
+#define JP_RBRACE PIPE
+#define JP_KANA LANGUAGE_1
+#define JP_EISU LANGUAGE_2
+#define JP_HANZEN GRAVE
+
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
@@ -33,15 +59,15 @@
 &lt 3 Q  &kp W  &kp E                 &kp R               &kp T                 &kp Y          &kp U      &kp I             &kp O       &kp P
 &kp A    &kp S  &kp D                 &kp F               &kp G                 &kp H          &kp J      &kp K             &lt 4 L     &kp MINUS
 &lt 1 Z  &kp X  &kp C                 &kp V               &kp B                 &kp N          &kp M      &kp COMMA         &kp PERIOD  &kp LEFT_WIN
-                &mt LCTRL LANGUAGE_2  &mt LEFT_SHIFT TAB  &mt LEFT_ALT SPACE    &kp BACKSPACE  &kp ENTER  &lt 2 LANGUAGE_1
+                &mt LCTRL JP_EISU     &mt LEFT_SHIFT TAB  &mt LEFT_ALT SPACE    &kp BACKSPACE  &kp ENTER  &lt 2 JP_KANA
             >;
         };
 
         layer_1 {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp HASH        &kp DOLLAR    &kp BACKSLASH    &kp N7        &kp N8        &kp N9        &kp PLUS      &kp MINUS
-&kp AMPERSAND     &kp AT             &kp EXCL        &kp UP_ARROW  &kp QUESTION     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp SLASH
-&none             &kp COLON          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &kp ENTER
+&kp JP_QUOTE      &kp JP_DQUOTE  &kp HASH        &kp DOLLAR    &kp JP_YEN      &kp N7        &kp N8        &kp N9        &kp JP_PLUS      &kp MINUS
+&kp JP_AMPERSAND  &kp JP_AT      &kp EXCL        &kp UP_ARROW  &kp QUESTION    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp JP_ASTERISK  &kp SLASH
+&none             &kp JP_COLON   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0           &kp ENTER
                                      &none           &none         &kp SPACE        &kp DELETE    &kp ENTER     &kp SPACE
             >;
         };
@@ -49,8 +75,8 @@
         layer_2 {
             bindings = <
 &kp F1  &kp F2          &kp F3          &kp F4           &kp F5           &kp F6  &kp F7                &kp F8                 &kp F9          &kp F10
-&none   &none           &kp UP_ARROW    &none            &kp PAGE_UP      &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F11         &kp F12
-&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans  &kp EQUAL             &kp TILDE              &kp UNDERSCORE  &kp PIPE
+&none   &none           &kp UP_ARROW    &none            &kp PAGE_UP      &none   &kp JP_LPAREN  &kp JP_RPAREN  &kp F11            &kp F12
+&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans  &kp JP_EQUAL   &kp JP_TILDE   &kp JP_UNDERSCORE  &kp JP_PIPE
                         &none           &none            &none            &none   &none                 &kp SPACE
             >;
         };
