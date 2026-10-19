@@ -41,13 +41,13 @@
         ime_on: ime_on {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp JP_KANA &kp F23>;
+            bindings = <&macro_tap &kp JP_KANA &kp INT_HENKAN>;
         };
 
         ime_off: ime_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp JP_EISU &kp F24>;
+            bindings = <&macro_tap &kp JP_EISU &kp INT_MUHENKAN>;
         };
     };
 
