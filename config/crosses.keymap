@@ -14,9 +14,19 @@
     combos {
         compatible = "zmk,combos";
 
+        lclk {
+            bindings = <&mkp LCLK>;
+            key-positions = <15 16>;
+        };
+
+        rclk {
+            bindings = <&mkp RCLK>;
+            key-positions = <16 17>;
+        };
+
         mclk {
             bindings = <&mkp MCLK>;
-            key-positions = <16 15>;
+            key-positions = <6 16>;
         };
 
         whispering {
@@ -31,7 +41,7 @@
         layer_0 {
             bindings = <
 &lt 3 Q  &kp W  &kp E                 &kp R               &kp T                 &kp Y          &kp U      &kp I             &kp O       &kp P
-&kp A    &kp S  &kp D                 &kp F               &kp G                 &kp H          &kp J      &kp K             &lt 4 L     &lt 5 MINUS
+&kp A    &kp S  &kp D                 &kp F               &kp G                 &kp H          &kp J      &kp K             &lt 4 L     &kp MINUS
 &lt 1 Z  &kp X  &kp C                 &kp V               &kp B                 &kp N          &kp M      &kp COMMA         &kp PERIOD  &kp LEFT_WIN
                 &mt LCTRL LANGUAGE_2  &mt LEFT_SHIFT TAB  &mt LEFT_ALT SPACE    &kp BACKSPACE  &kp ENTER  &lt 2 LANGUAGE_1
             >;
@@ -70,15 +80,6 @@
 &trans     &trans     &trans        &trans  &trans    &trans  &mkp MB4  &mkp MB5  &trans  &trans
 &kp LCTRL  &kp LSHFT  &kp LEFT_ALT  &trans  &trans    &trans  &trans    &trans    &trans  &trans
                       &trans        &trans  &trans    &trans  &trans    &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK  &mo 4   &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans
-                &trans  &trans  &trans    &trans  &trans     &trans
             >;
         };
 
